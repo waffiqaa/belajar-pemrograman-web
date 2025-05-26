@@ -1,0 +1,46 @@
+<!-- contact.html -->
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <title>Kontak</title>
+  <link rel="stylesheet" href="style-contact.css">
+</head>
+<body>
+  <header>
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="anime.html">Favorite Anime</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section class="contact">
+    <h2>Hubungi Saya</h2>
+    <form action="process.php" method="POST">
+      <label for="nama">NAMA :</label>
+      <input type="text" id="nama" name="nama" required>
+    
+      <label for="email">EMAIL :</label>
+      <input type="email" id="email" name="email" required>
+    
+      <label for="whatsapp">NOMOR WHATSAPP :</label>
+      <p style="font-size: smaller; color: gray;">Contoh: 081234567890</p>
+      <input type="tel" id="whatsapp" name="whatsapp" pattern="[0-9]{10,13}" required>
+    
+      <label for="pesan">PESAN :</label>
+      <textarea id="pesan" name="pesan"></textarea>
+    
+      <input type="submit" value="Kirim">
+    </form>
+    <div class="sosmed">
+        <a href="https://www.instagram.com/dhkvlr/" target="_blank">Instagram</a> |
+        <a href="https://www.tiktok.com/@wfqaajae" target="_blank">TikTok</a> |
+        <a href="https://twitter.com/jwo__006" target="_blank">Twitter</a>
+    </div>
+  </section>
+</body>
+</html>
